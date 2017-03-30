@@ -16,5 +16,12 @@ namespace Прогноз_прибыли_фирмы
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "firmDataSet.филиал_1". При необходимости она может быть перемещена или удалена.
+            this.filial1TableAdapter.Fill(this.firmDataSet.филиал_1);
+
+        }
     }
 }
